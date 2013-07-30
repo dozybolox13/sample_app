@@ -43,4 +43,17 @@ end
     end  
 
   end
+
+  describe "Contacts" do
+    it "should have content 'Contacts'" do
+      visit '/static_pages/contacts'
+      expect(page).to have_content('Eddie is a faggot')
+    end
+
+    it "should have title 'Contacts'" do
+      visit '/static_pages/contacts'
+      expect(page).to have_title('Contacts')
+    end
+
+  end
 end
